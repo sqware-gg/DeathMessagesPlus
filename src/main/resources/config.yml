@@ -1,0 +1,102 @@
+# DeathMessagesPlus
+# Paper 26.1.2+ / Java 25
+config-version: 1
+
+enabled: true
+
+broadcast:
+  enabled: true
+
+  # Options: all, world, permission, self, none
+  audience: "all"
+
+  # Used when audience is permission.
+  permission: "deathmessagesplus.see"
+
+  # Mirror formatted death messages to the console.
+  console: true
+
+  # MiniMessage placeholders:
+  # <player>, <display_name>, <killer>, <killer_name>, <killer_type>
+  # <summary>, <vanilla>, <vanilla_without_player>, <world>, <x>, <y>, <z>
+  # <damage_type>, <damage_path>, <cause>, <dropped_items>
+  template: "<#ff4f6d>Death</#ff4f6d> <dark_gray>></dark_gray> <white><display_name></white> <gray><summary></gray>"
+
+personal-message:
+  enabled: true
+
+  # Wait one tick so the message is sent after the death event finishes.
+  delay-ticks: 1
+
+  # If true, the personal message is skipped when no item stacks were dropped.
+  only-if-items-dropped: false
+
+  # Used only for placeholders. Minecraft's default item despawn time is 300 seconds.
+  item-despawn-seconds: 300
+
+  # Additional placeholders:
+  # <item_despawn_seconds>, <item_despawn_minutes>
+  template: "<#ff4f6d>Death</#ff4f6d> <dark_gray>></dark_gray> <gray>Quickly return to <#ffcc66><x> <y> <z></#ffcc66> in <white><world></white>, or your items could despawn.</gray>"
+
+filter:
+  ignored-worlds: []
+  ignored-damage-types: []
+
+format:
+  # Options: minimessage, legacy
+  engine: "minimessage"
+
+summary-templates:
+  # Used if a damage type is not listed below.
+  default: "<vanilla_without_player>"
+
+  arrow: "was shot by <killer>"
+  bad_respawn_point: "was caught in a bed explosion"
+  cactus: "walked into a cactus"
+  campfire: "stood too close to a campfire"
+  cramming: "was crushed in a crowd"
+  dragon_breath: "was roasted by dragon breath"
+  drown: "forgot to breathe"
+  dry_out: "dried out"
+  ender_pearl: "threw an ender pearl a little too hard"
+  explosion: "was blown up"
+  fall: "fell from a high place"
+  falling_anvil: "was flattened by an anvil"
+  falling_block: "was crushed by a falling block"
+  falling_stalactite: "was skewered by a falling stalactite"
+  fireball: "was fireballed by <killer>"
+  fireworks: "went out with a bang"
+  fly_into_wall: "flew into a wall"
+  freeze: "froze solid"
+  generic: "died"
+  generic_kill: "was removed from the world"
+  hot_floor: "found out the floor was lava"
+  in_fire: "went up in flames"
+  in_wall: "suffocated in a wall"
+  indirect_magic: "was finished by magic"
+  lava: "tried to swim in lava"
+  lightning_bolt: "was struck by lightning"
+  mace_smash: "was smashed by <killer>"
+  magic: "was killed by magic"
+  mob_attack: "was slain by <killer>"
+  mob_attack_no_aggro: "was slain by <killer>"
+  mob_projectile: "was shot by <killer>"
+  on_fire: "burned away"
+  out_of_world: "fell out of the world"
+  outside_border: "left the world border"
+  player_attack: "was bested by <killer>"
+  player_explosion: "was blown up by <killer>"
+  sonic_boom: "was blasted by a sonic boom"
+  spear: "was impaled by <killer>"
+  spit: "was spat on by <killer>"
+  stalagmite: "landed on a stalagmite"
+  starve: "starved"
+  sting: "was stung to death"
+  sweet_berry_bush: "was poked to death by sweet berries"
+  thorns: "was pricked by thorns"
+  thrown: "was hit by <killer>"
+  trident: "was impaled by <killer>"
+  unattributed_fireball: "was fireballed"
+  wind_charge: "was launched by a wind charge"
+  wither: "withered away"
+  wither_skull: "was withered by <killer>"

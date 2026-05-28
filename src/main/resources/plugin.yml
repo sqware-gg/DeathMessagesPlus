@@ -1,0 +1,22 @@
+name: DeathMessagesPlus
+version: 0.1.0
+main: dev.deathmessagesplus.DeathMessagesPlusPlugin
+api-version: '26.1.2'
+author: SQWARE / Conflict
+website: https://sqware.gg
+description: Colored, configurable death messages and death-location reminders for Paper.
+commands:
+  deathmessagesplus:
+    description: Manage DeathMessagesPlus.
+    usage: /deathmessagesplus [status|reload|preview]
+    aliases:
+      - deathmessages
+      - deathsplus
+      - dmp
+permissions:
+  deathmessagesplus.admin:
+    description: Allows managing DeathMessagesPlus.
+    default: op
+  deathmessagesplus.see:
+    description: Allows receiving DeathMessagesPlus broadcasts when permission audience is enabled.
+    default: true

@@ -1,6 +1,6 @@
 # DeathMessagesPlus
 
-**Get the plugin jar, setup help, and updates in the SQWARE Discord: [discord.sqware.gg](https://discord.sqware.gg).**
+**Join the SQWARE Discord: [discord.sqware.gg](https://discord.sqware.gg).**
 
 DeathMessagesPlus is a custom death messages plugin for Paper servers. It replaces vanilla player death messages with configurable colored messages and can show the dead player a return-to-location reminder.
 

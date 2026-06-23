@@ -2,9 +2,9 @@
 
 **Join the SQWARE Discord: [discord.sqware.gg](https://discord.sqware.gg).**
 
-DeathMessagesPlus is a custom death messages plugin for Paper servers. It replaces vanilla player death messages with configurable colored messages and can show the dead player a return-to-location reminder.
+DeathMessagesPlus is a custom death messages plugin for Paper servers. It shows configurable colored death messages and can show the dead player a return-to-location reminder while suppressing duplicate vanilla death chat.
 
-Use it when you want DeathMessagesPrime-style control over death chat without a large dependency chain.
+Use it when you want configurable death chat without a large dependency chain.
 
 ## Features
 
@@ -17,7 +17,7 @@ Use it when you want DeathMessagesPrime-style control over death chat without a 
 
 ## Requirements
 
-- Paper `26.1.2+`
+- Paper `26.2+`
 - Java `25+`
 - Maven wrapper included
 
